@@ -62,7 +62,24 @@ This summary provides an overview of the main Java code for a simple implementat
 
 ## Instructions to run: 
 
-1. Open terminal:
-2. First command: javac GameFrame.java GamePanel.java SnakeGame.java
-3. Second command: java GameFrame GamePanel SnakeGame
-4. Program will then open.
+Running the Java Snake Game Code in VSCode: To run the Java code for this Snake game, you will need to have Java and Visual Studio Code installed on your computer. 
+
+### 1. Clone the repository
+
+Clone the repository that contains the Java code onto your local machine. You can do this by running the following command in your terminal:
+
+```
+git clone https://github.com/yiqiao-yin/Snake-Game.git
+```
+
+Replace `<username>` and `<repository-name>` with the appropriate values for the repository you want to clone.
+
+### 2. Open the Java project in VSCode
+
+Open up Visual Studio Code and choose "Open Folder" from the File menu. Navigate to the directory where you cloned the repository in step 1 and select it. This should open up the Java project in VSCode.
+
+### 3. Run the code
+
+To run the Java code, click on the "Run" button at the top of the screen (or use the keyboard shortcut `Ctrl + Shift + D` followed by `Enter`). This should bring up the Run panel at the top of the screen. From here, you can click the green "Play" button to run the program. 
+
+The Snake game should now be running in a new window. Use the arrow keys on your keyboard to control the direction of the snake and try to eat as many pieces of food as possible!
