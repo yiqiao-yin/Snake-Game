@@ -72,8 +72,6 @@ Clone the repository that contains the Java code onto your local machine. You ca
 git clone https://github.com/yiqiao-yin/Snake-Game.git
 ```
 
-Replace `<username>` and `<repository-name>` with the appropriate values for the repository you want to clone.
-
 ### 2. Open the Java project in VSCode
 
 Open up Visual Studio Code and choose "Open Folder" from the File menu. Navigate to the directory where you cloned the repository in step 1 and select it. This should open up the Java project in VSCode.
