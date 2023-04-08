@@ -1,5 +1,7 @@
 # Java Snake Game Code Summary
 
+<p align="center"><img src="https://github.com/yiqiao-yin/Snake-Game/blob/main/docs/anime.gif"></img></p>
+
 This is a summary of the Java code for a simple implementation of the classic "snake" game.
 
 ## `SnakeGame` class
