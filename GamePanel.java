@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
+import javax.swing.ImageIcon;
 
 // Importing the JPanel class from the javax.swing package
 import javax.swing.JPanel;
