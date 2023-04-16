@@ -144,3 +144,54 @@ public class ScannerClient {
     }
 }
 ```
+
+## Fundamental Programming Constructs
+
+The description you provided is referring to the fundamental programming constructs that are used in algorithms, which include sequencing, selection, and iteration.
+
+- **Sequencing** refers to the ordering of individual statements or actions. In Java, sequencing is accomplished by listing a series of operations one after the other, separated by semicolons. For example:
+
+```java
+// Define an integer variable named x and initialize it with a value of 5
+int x = 5;
+
+// Define an integer variable named y and initialize it with a value of 10
+int y = 10;
+
+// Add the values of x and y together and store the result in a new variable named z
+int z = x + y;
+
+// Print out the sum of x and y using the value stored in the z variable
+System.out.println("The sum of " + x + " and " + y + " is " + z + ".");
+```
+
+This code segment demonstrates sequencing, as each statement is executed in order from top to bottom.
+
+- **Selection** involves making decisions based on conditions. In Java, selection is accomplished using conditional statements such as `if`, `else if`, and `else`. For example:
+
+```java
+// Define an integer variable named age and initialize it with a value of 20
+int age = 20;
+
+// Check if the age is greater than or equal to 18
+if (age >= 18) {
+    // If the age is greater than or equal to 18, print that the person is old enough to vote
+    System.out.println("You are old enough to vote.");
+} else {
+    // If the age is less than 18, print that the person is not yet old enough to vote
+    System.out.println("You are not old enough to vote yet.");
+}
+```
+
+This code segment demonstrates selection, as the program chooses which message to print based on the value of the `age` variable.
+
+- **Iteration** involves repeating a set of instructions until a condition is met. In Java, iteration is typically accomplished using loops such as `for` and `while`. For example:
+
+```java
+int i; // Declaring a variable i of type integer
+for (i = 0; i < 10; i++) { // Starting a for loop from 0 to 9 (inclusive)
+    System.out.println(i); // Printing the value of i to the console
+}
+```
+
+This code segment demonstrates iteration, as the `for` loop repeats the `System.out.println()` statement 10 times, incrementing the value of `i` with each repetition.
