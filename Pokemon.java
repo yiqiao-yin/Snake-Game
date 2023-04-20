@@ -1,12 +1,16 @@
-public class Pokeman {
+public class Pokemon {
+
+    // initialize with 2 variables
     String name;
     int level;
 
-    Pokeman() {
+    // initialize using 1 variable you just defined
+    Pokemon() {
         level = 1;
     }
 
-    Pokeman(String name, int level) {
+    // intialize with a void method
+    Pokemon(String name, int level) {
         this.name = name;
         this.level = level;
         this.attack();

@@ -8,7 +8,8 @@ import javax.swing.ImageIcon;
 // Importing the JPanel class from the javax.swing package
 import javax.swing.JPanel;
 
-
+// Define a public class and the class object uses 'implements' to builds a contract
+// for continuing user interaction
 public class GamePanel extends JPanel implements ActionListener{
 
 	private static final long serialVersionUID = 1L;
@@ -74,7 +75,7 @@ public class GamePanel extends JPanel implements ActionListener{
 		
 		// Starts the timer, which will call the actionPerformed method of the GamePanel 
 		// instance every 80 milliseconds and update the game state and repaint the screen 
-		timer.start();	
+		timer.start();
 	}
 
 
