@@ -97,6 +97,9 @@ public class GamePanel extends JPanel implements ActionListener{
 
 		// Shifts each element in the x and y arrays to the position of the previous element,
 		// effectively moving each body segment one unit closer to the head's next position
+		// For example, say you have a snake that has body (0,1), and (0,2), e.g. length of 2. 
+		// If you want to move up 1 unit, you'll need to shift/change the coordinates of the body
+		// to (0,2), and (0,3).
 		for (int i = length; i > 0; i--) {
 			x[i] = x[i-1];
 			y[i] = y[i-1];
