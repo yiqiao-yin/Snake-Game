@@ -126,6 +126,7 @@ public class GamePanel extends JPanel implements ActionListener{
 		if(x[0] == foodX && y[0] == foodY) {
 			length++;
 			foodEaten++;
+			checkHit();
 			addFood();
 		}
 	}
@@ -180,7 +181,8 @@ public class GamePanel extends JPanel implements ActionListener{
 				running = false;
 			}
 		}
-		
+
+
 		// Check if the head of the snake has hit the game board boundaries
 		if (x[0] < 0 || x[0] > WIDTH || y[0] < 0 || y[0] > HEIGHT) {
 			// Stop the game if a collision is detected
