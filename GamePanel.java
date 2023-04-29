@@ -4,6 +4,9 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.Random;
 import javax.swing.ImageIcon;
+import java.util.ArrayList;
+import java.util.List;
+import java.lang.Math;
 
 // Importing the JPanel class from the javax.swing package
 import javax.swing.JPanel;
@@ -131,6 +134,36 @@ public class GamePanel extends JPanel implements ActionListener{
 		}
 	}
 
+	// Creates a function that collects width and height
+	// later we will call it to display this on screen
+	public static List<Object> createList() {
+		// Create a new list for integers
+		List<Integer> intItems = new ArrayList<>();
+	
+		// Create a new list for strings
+		List<String> strItems = new ArrayList<>();
+	
+		// Create an array of integers to append
+		int[] newItems = { WIDTH, HEIGHT };
+	
+		// Iterate through the array and append items to the respective lists
+		for (int item : newItems) {
+			if (item < 1000) {
+				intItems.add(item);
+			} else {
+				double magnitude = item / 1000.0;
+				strItems.add(String.format("%.1fk", magnitude));
+			}
+		}
+	
+		// Create a new list to combine both integer and string items
+		List<Object> combinedItems = new ArrayList<>(intItems);
+		combinedItems.addAll(strItems);
+	
+		// Return the combined list
+		return combinedItems;
+	}
+	
 
 	// Draws the game board and all its contents
 	public void draw(Graphics graphics) {
@@ -149,12 +182,14 @@ public class GamePanel extends JPanel implements ActionListener{
 				graphics.setColor(new Color(40, 200, 150));
 				graphics.fillRect(x[i], y[i], UNIT_SIZE, UNIT_SIZE);
 			}
-			
+
 			// Draw the score display as white text centered at the top of the screen
 			graphics.setColor(Color.white);
 			graphics.setFont(new Font("Sans serif", Font.ROMAN_BASELINE, 25));
 			FontMetrics metrics = getFontMetrics(graphics.getFont());
-			graphics.drawString("Score: " + foodEaten, (WIDTH - metrics.stringWidth("Score: " + foodEaten)) / 2, graphics.getFont().getSize());
+			String items = createList().toString();
+			graphics.drawString("[W, H] = " + items, 5, graphics.getFont().getSize());
+			graphics.drawString("Score: " + foodEaten, (WIDTH - metrics.stringWidth("Score: " + foodEaten)), graphics.getFont().getSize());
 		
 		} else {
 			// If the game is over, call the gameOver() method to display a message
